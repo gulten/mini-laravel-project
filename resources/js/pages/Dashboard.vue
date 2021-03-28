@@ -1,28 +1,26 @@
 <template>
     <div>
-        <div class="container">
-            <v-card
-                class="overflow-hidden"
-                color="lighten-1"
+        <v-card
+            class="overflow-hidden"
+            color="lighten-1"
+        >
+            <v-toolbar
+                flat
             >
-                <v-toolbar
-                    flat
-                >
-                    <v-icon>mdi-account</v-icon>
-                    <v-toolbar-title class="font-weight-light">Dashboard Page</v-toolbar-title>
-                    <v-spacer></v-spacer>
-                </v-toolbar>
+                <v-icon>mdi-account</v-icon>
+                <v-toolbar-title class="font-weight-light">Dashboard Page</v-toolbar-title>
+                <v-spacer></v-spacer>
+            </v-toolbar>
 
-                <v-card-text>
-                    <v-card>
-                        <highcharts :options="chartOptionsPie" :highcharts="hcInstance"></highcharts>
-                    </v-card>
-                    <v-card>
-                        <highcharts :options="ChartOptionsBar" :highcharts="hcInstance"></highcharts>
-                    </v-card>
-                </v-card-text>
-            </v-card>
-        </div>
+            <v-card-text>
+                <v-card>
+                    <highcharts :options="chartOptionsPie" :highcharts="hcInstance"></highcharts>
+                </v-card>
+                <v-card>
+                    <highcharts :options="ChartOptionsBar" :highcharts="hcInstance"></highcharts>
+                </v-card>
+            </v-card-text>
+        </v-card>
     </div>
 </template>
 

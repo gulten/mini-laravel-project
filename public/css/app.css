@@ -1,6 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
 @charset "UTF-8";
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.layout {
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.wrapper.login {
+  background-image: url(/images/login_bg.jpg?3a6797c5a8d35c481d524d513975ee49);
+}
+
+.wrapper.dashboard {
+  background-image: url(/images/dashboard_bg.png?e4cb80071763e5b188dd651b41f4e7b5);
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

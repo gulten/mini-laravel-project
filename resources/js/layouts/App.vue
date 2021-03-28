@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="wrapper" :class="$route.name">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <router-link :to="{ name: 'home' }" class="navbar-brand"
+            <router-link :to="{ name: 'dashboard' }" class="navbar-brand"
             >Laravel-Vue SPA</router-link
             >
             <button
@@ -47,7 +47,7 @@
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container" data-app>
             <router-view></router-view>
         </div>
     </div>
